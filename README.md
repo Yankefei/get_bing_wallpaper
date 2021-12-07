@@ -16,6 +16,10 @@
 
 <img src=".\resc\img\get_by_hand.png" alt="手动获取" style="zoom: 33%;" />
 
+<center style="font-size:14px;color:#C0C0C0;text-decoration:underline">图1.手动获取</center> 
+
+
+
 ​		如果你觉得这种方式每天都需要手动操作一遍，很麻烦，这里推荐一种使用脚本来自动化获取的方式：
 
 ## 方案一：shell脚本
@@ -42,33 +46,41 @@
 ​		在windows上选择`Windows管理工具`中的`任务计划程序`：
 
 <img src=".\resc\img\win_1.png" alt="添加定时任务" style="zoom:50%;" />
+<center style="font-size:14px;color:#C0C0C0;text-decoration:underline">图2.添加定时任务</center> 
 
 ​		新建任务：
 
 <img src=".\resc\img\win_2.png" alt="新建任务" style="zoom:50%;" />
+<center style="font-size:14px;color:#C0C0C0;text-decoration:underline">图3.新建任务</center> 
 
 ​		设置每日运行时间：
 
 <img src=".\resc\img\win_3.png" alt="设置时间" style="zoom:50%;" />
+<center style="font-size:14px;color:#C0C0C0;text-decoration:underline">图4.设置时间</center> 
 
 ​		设置运行的程序名和参数，这里`程序`需要选择安装的`gitbash`程序中的`/usr/bin/bash.exe`，参数选择代码中脚本`get_bing_wallpaper.sh`的**绝对路径**.
 
 <img src=".\resc\img\win_4.png" alt="添加运行参数" style="zoom:50%;" />
+<center style="font-size:14px;color:#C0C0C0;text-decoration:underline">图5.添加运行参数</center> 
 
 #### 2.3 步骤三
 ​		查看执行结果，程序每日的运行会将`1920*1080`格式的图片文件和`1920*1200`格式的文件分别发放在这两个目录中，命名方式为：`%M%D_图片名称.jpg`. 可以查看每日运行的详细内容，在`log_2021_12.log`的文件中，以月份最小生成间隔。
 
 <img src=".\resc\img\win_5.png" alt="保存路径" style="zoom: 67%;" />
+<center style="font-size:14px;color:#C0C0C0;text-decoration:underline">图6.保存目录内容</center> 
 
 ​		一开始预想将图片的版权信息也添加到文件名称中，如：`%M%D_图片名称 版权信息.jpg`，但是`bash`内部不支持这样长的文件名，原因未知，所以每日的日志文件大概率中会有重命名失败的日志，如果失败，则退而使用上面的`%M%D_图片名称.jpg`命名法。日志中的错误可以忽略。
 
 <img src=".\resc\img\win_6.png" alt="保存路径2" style="zoom: 67%;" />
+<center style="font-size:14px;color:#C0C0C0;text-decoration:underline">图7.图片目录</center> 
 
 <img src=".\resc\img\win_7.png" alt="文件日志" style="zoom: 67%;" />
+<center style="font-size:14px;color:#C0C0C0;text-decoration:underline">图8.文件日志</center> 
 
 ​		如果需要手动测试脚本，可以直接在`GitBash`的终端进行如下测试：
 
 <img src=".\resc\img\win_8.png" alt="手动运行" style="zoom: 67%;" />
+<center style="font-size:14px;color:#C0C0C0;text-decoration:underline">图9.手动测试</center> 
 
 ### 3. linux 平台使用
 
