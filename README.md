@@ -43,21 +43,26 @@
 
 #### 2.2 步骤二
 
+##### 2.2.1 打开任务计划程序
+
 ​		在windows上选择`Windows管理工具`中的`任务计划程序`：
 
 <img src=".\resc\img\win_1.png" alt="添加定时任务" style="zoom:50%;" />
+
 <center style="font-size:14px;color:#C0C0C0;text-decoration:underline">图2.添加定时任务</center> 
 
-​		新建任务：
+##### 2.2.2 新建任务
 
 <img src=".\resc\img\win_2.png" alt="新建任务" style="zoom:50%;" />
+
 <center style="font-size:14px;color:#C0C0C0;text-decoration:underline">图3.新建任务</center> 
 
-​		设置每日运行时间：
+##### 2.2.3 设置每日运行时间：
 
 <img src=".\resc\img\win_3.png" alt="设置时间" style="zoom:50%;" />
 <center style="font-size:14px;color:#C0C0C0;text-decoration:underline">图4.设置时间</center> 
 
+##### 2.2.4 设置参数
 ​		设置运行的程序名和参数，这里`程序`需要选择安装的`gitbash`程序中的`/usr/bin/bash.exe`，参数选择代码中脚本`get_bing_wallpaper.sh`的**绝对路径**.
 
 <img src=".\resc\img\win_4.png" alt="添加运行参数" style="zoom:50%;" />
