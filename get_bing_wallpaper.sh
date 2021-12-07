@@ -1,6 +1,9 @@
 #!/bin/bash
 
-#cd /c/Users/cool/Desktop/daily_scheduled_tashs
+#进入脚本当前目录
+script_dir=$(cd $(dirname $0) && pwd)
+cd ${script_dir}
+
 log_file_name=log_"`date +%Y-%m`.log"
 date_str="`date +%Y-%m-%d`"
 
