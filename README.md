@@ -8,7 +8,7 @@
 
 ​	   这是一个可以在windows和linux平台上使用脚本自动获取`https://cn.bing.com`搜索网页的背景壁纸，如果你也喜欢该网页上的壁纸，可以使用手动在`chrome`浏览器中，使用鼠标右击检查，在浏览器内置的调试栏：`Sources`项中可以手动保存原始文件：
 
-![手动获取](.\resc\img\get_by_hand.png)
+<img src=".\resc\img\get_by_hand.png" alt="手动获取" style="zoom: 33%;" />
 
 ​		如果你觉得这种方式每天都需要手动操作一遍，很麻烦，这里推荐一种使用脚本来自动化获取的方式：
 
